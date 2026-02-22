@@ -1,0 +1,55 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update checklist with labeled checkboxes for Bias, OBS, LQS, and FVG",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Update AddTradeDialog component to display exactly four checkbox items with descriptive labels: 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps'",
+      "acceptanceCriteria": [
+        "AddTradeDialog displays exactly four checklist items",
+        "Each item shows as a checkbox with a label combining the term and its description (e.g., 'Bias - Market direction')",
+        "Checklist items are in this order: Bias, OBS, LQS, FVG"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AddTradeDialog.tsx",
+          "operation": "modify",
+          "description": "Update the pre-trade checklist section to display exactly four checkbox items with labels. Replace the current checklist rendering to show 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps' in that order. Each checkbox should display the term followed by a dash and its description. Ensure the checklist state management correctly handles these four items and their checked states are properly saved when the form is submitted."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Update EditTradeDialog component to display exactly four checkbox items with descriptive labels matching AddTradeDialog: 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps'",
+      "acceptanceCriteria": [
+        "EditTradeDialog displays exactly four checklist items matching AddTradeDialog",
+        "Each item shows as a checkbox with a label combining the term and its description",
+        "Existing trade checklist data is preserved and displayed correctly"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/EditTradeDialog.tsx",
+          "operation": "modify",
+          "description": "Update the pre-trade checklist section to display exactly four checkbox items with labels matching AddTradeDialog. Replace the current checklist rendering to show 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps' in that order. Each checkbox should display the term followed by a dash and its description. Ensure the checklist loads the existing trade's checklist data correctly and preserves the checked states when updating the trade."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Update TradesList component to display the four checklist items (Bias, OBS, LQS, FVG) with their descriptive labels when showing trade details",
+      "acceptanceCriteria": [
+        "Trade detail view shows checklist items with full labels (e.g., 'Bias - Market direction')",
+        "Checked and unchecked states are clearly visible",
+        "Display matches the order and labels used in the add/edit dialogs"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TradesList.tsx",
+          "operation": "modify",
+          "description": "Update the trade detail view dialog to display checklist items with their full descriptive labels: 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps'. Ensure the display shows checked and unchecked states clearly (e.g., using checkmark icons or visual indicators) and maintains the same order as the add/edit dialogs. The labels should match exactly across all components."
+        }
+      ]
+    }
+  ]
+}

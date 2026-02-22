@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Trading journal web app with streamlined checklist (Bias, OBS, LQS, FVG)",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-the-pre-trade-checklist-in-the-addtradedialog-component-to-display-exactly-four-checkbox-items-with-labels-bias-market-direction-obs-order-blocks-lqs-liquidity-sweeps-and-fvg-fair-value-gaps",
+      "title": "Update the pre-trade checklist in the AddTradeDialog component to display exactly four checkbox items with labels: 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps'",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-pre-trade-checklist-in-the-edittradedialog-component-to-display-exactly-four-checkbox-items-with-labels-bias-market-direction-obs-order-blocks-lqs-liquidity-sweeps-and-fvg-fair-value-gaps",
+      "title": "Update the pre-trade checklist in the EditTradeDialog component to display exactly four checkbox items with labels: 'Bias - Market direction', 'OBS - Order blocks', 'LQS - Liquidity sweeps', and 'FVG - Fair value gaps'",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-tradeslist-component-to-display-the-four-checklist-items-bias-obs-lqs-fvg-with-their-descriptive-labels-when-showing-trade-details",
+      "title": "Update the TradesList component to display the four checklist items (Bias, OBS, LQS, FVG) with their descriptive labels when showing trade details",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update checklist to show only: Bias (Market direction), OBS (Order blocks), LQS (Liquidity sweeps), FVG (Fair value gaps) with checkbox format",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Update checklist with labeled checkboxes for Bias, OBS, LQS, and FVG",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
